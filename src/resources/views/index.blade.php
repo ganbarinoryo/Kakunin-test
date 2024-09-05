@@ -2,6 +2,11 @@
 <html lang="ja">
 
 <head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +45,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('name')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -56,6 +64,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('gender')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -72,6 +83,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('email')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -88,6 +102,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('tell')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -104,6 +121,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('address')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -135,6 +155,9 @@
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
+              @error('detail')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -148,6 +171,12 @@
           <div class="form__group-content">
             <div class="form__input--textarea">
               <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+              @error('content')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>

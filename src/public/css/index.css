@@ -1,5 +1,18 @@
+.inika-regular {
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inika-bold {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .header {
-    background: #000;
+    background: #ffffff;
+    border-bottom: solid 1px #82756A;
 }
 
 .header__inner {
@@ -10,7 +23,7 @@
 }
 
 .header__logo {
-    color: #fff;
+    color: #8B7969;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -20,11 +33,17 @@
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 1230px;
+    color: #8B7969;
 }
 
 .contact-form__heading {
+    
     margin-bottom: 40px;
     text-align: center;
+}
+
+.contact-form__heading h2 {
+    color: #8B7969;
 }
 
 .form {
@@ -81,7 +100,7 @@
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: #82756A;
     color: #fff;
     cursor: pointer;
 }
