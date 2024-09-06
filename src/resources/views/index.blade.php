@@ -1,36 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('layouts.app')
 
-<head>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/index.css') }}">
+@endsection
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+@section('content')
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FashionablyLate</title>
-  <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-  <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="/">
-        FashionablyLate
-      </a>
-    </div>
-  </header>
-
-  <main>
     <div class="contact-form__content">
       <div class="contact-form__heading">
         <h2>Contact</h2>
       </div>
 
-      <form class="form" action="/contacts/confirm" method="post">
+      <form class="form" action="/contacts/confirm" method="POST">
         @csrf
 
 <!--名前-->
@@ -41,7 +22,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="name" placeholder="例:山田" />
+              <input type="text" name="name" placeholder="例:山田" value="{{ old('name') }}" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -60,7 +41,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="gender" placeholder="性別です" />
+              <input type="text" name="gender" placeholder="性別です"   value="{{ old('gender') }}" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -79,7 +60,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="email" name="email" placeholder="test@example.com" />
+              <input type="email" name="email" placeholder="test@example.com" value="{{ old('email') }}" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -98,7 +79,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="tel" name="tell" placeholder="08012345678" />
+              <input type="tel" name="tell" placeholder="08012345678" value="{{ old('tell') }}"/>
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -117,7 +98,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3" />
+              <input type="text" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3" value="{{ old('address') }}" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -135,7 +116,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="building" placeholder="例:千駄ヶ谷マンション" />
+              <input type="text" name="building" placeholder="例:千駄ヶ谷マンション" value="{{ old('building') }}"/>
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -151,7 +132,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="detail" placeholder="選択してください" />
+              <input type="text" name="detail" placeholder="選択してください" value="{{ old('detail') }}"/>
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -170,7 +151,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">
-              <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
+              <textarea name="content" placeholder="お問い合わせ内容をご記載ください" value="{{ old('content') }}"></textarea>
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -187,7 +168,4 @@
         </div>
       </form>
     </div>
-  </main>
-</body>
-
-</html>
+@endsection

@@ -34,4 +34,17 @@ class ContactRequest extends FormRequest
             'content' => ['required', 'string', 'max:120']
         ];
     }
+
+   public function messages()
+   {
+        return [
+            'name.required' => '名前を入力してください',
+            'gender.required' => '性別を選択してください',
+            'email.required' => 'メールアドレスを入力してください',
+            'tell.required' => '電話番号を入力してください',
+            'address.required' => '住所を入力してください',
+            'detail.required' => 'お問い合わせの種類を入力してください',
+            'content.required' => 'お問い合わせの内容を入力してください'
+        ];
+   }
 }

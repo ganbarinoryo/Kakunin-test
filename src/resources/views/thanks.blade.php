@@ -11,13 +11,6 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="/">
-        Contact Form
-      </a>
-    </div>
-  </header>
 
   <main>
     <div class="thanks__content">
@@ -25,6 +18,13 @@
         <h2>お問い合わせありがとうございます</h2>
       </div>
     </div>
+<!--homeボタン-->
+    <Form class="form" action="/" method="get">
+     <div class="form__button">
+      <button class="form__button-submit" type="submit">HOME</button>
+     </div>
+    </Form>
+
   </main>
 </body>
 

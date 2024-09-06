@@ -16,6 +16,8 @@ class ContactController extends Controller
   {
     $contact = $request->only(['name', 'gender', 'email', 'tell' ,'address', 'building', 'detail', 'content']);
       return view('confirm', compact('contact'));
+      return back('index');
+
   }
 
   public function store(ContactRequest $request)
@@ -24,4 +26,10 @@ class ContactController extends Controller
       Contact::create($contact);
       return view('thanks');
   }
+
+  public function thanks()
+  {
+    return view('index');
+  }
+
 }
