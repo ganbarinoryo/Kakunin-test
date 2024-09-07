@@ -86,12 +86,10 @@
 
           <button class="form__button-submit" type="submit">送信</button>
 
-        </div>
-      </form>
+          <form class="form" action="/" method="get">
+           <button class="form__button-submit-clear" type="submit">修正</button>
+          </form>
 
-       <form class="form" action="/" method="get">
-        <div class="form__button">
-          <button class="form__button-submit-clear" type="submit">修正</button>
         </div>
       </form>
 
