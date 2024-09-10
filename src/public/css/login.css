@@ -1,0 +1,106 @@
+.header {
+    background: #ffffff;
+    border-bottom: solid 1px #82756A;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    text-align: center;
+}
+
+.header__logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.login-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.login-form__heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form__heading h2 {
+    color: #8B7969;
+}
+
+.login__button {
+    float: right;
+    margin-left: -100px;
+    cursor: pointer;
+}
+
+.login__button a {
+    text-decoration: none;
+    color: #8B7969;
+}
+
+.login__button-submit {
+    width: 80px;
+    height: 30px;
+    border: solid 1px #82756A;
+    border-radius: 3px;
+    background: #D9C6B5;
+    font-size: 15px;
+    color: #82756A;
+}
+
+.login-form__heading h2 {
+    color: #8B7969;
+}
+
+.form {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+
+}
+
+.form__group {
+    margin-bottom: 5px;
+}
+
+.form__group-title {
+    text-align: left;
+    color: #8B7969;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__button {
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #82756A;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}

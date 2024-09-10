@@ -6,7 +6,7 @@ use App\Http\Requests\ContactRequest;
 use App\Models\Contact;
 
 class ContactController extends Controller
-{
+{ 
   public function index()
   {
     return view('index');
@@ -30,6 +30,11 @@ class ContactController extends Controller
   public function thanks()
   {
     return view('index');
+  }
+
+  public function register()
+  {
+    return view('register');
   }
 
 }
