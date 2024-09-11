@@ -118,8 +118,8 @@
     border: none;
 }
 
-/*table {
-    width: 100%;
-    border-collapse: collapse;
-}*/
+.data-table {
+    width: 1400px;
+}
+
 

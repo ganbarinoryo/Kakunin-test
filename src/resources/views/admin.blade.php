@@ -96,7 +96,9 @@
       <button class="export__button-submit-1" type="submit" href="/">エクスポート</button>
 
 <!--データテーブル-->
-<div class="data-table"> 
+<div class="data-table">
+  <div class="table__inner">
+    <div class="data-table"> 
 <table>
   <tr>
     <th>お名前</th>
@@ -114,6 +116,8 @@
   @endforeach
 </table>
 </div> 
+  </div>
+</div>
 
    </div>
 
